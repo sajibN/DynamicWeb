@@ -1,0 +1,151 @@
+/* Reset margins & paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f4f4f9;
+    font-family: Arial, sans-serif;
+}
+
+/* Navigation Bar */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #1E293B;
+    padding: 20px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Header */
+header ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: #F8FAFC;
+    font-size: 18px;
+    padding: 10px 15px;
+    transition: 0.3s;
+}
+
+header ul li a:hover {
+    color: #38BDF8;
+    background-color: #334155;
+    border-radius: 5px;
+}
+
+/* Search Form */
+form {
+    display: flex;
+    gap: 10px;
+}
+
+input[type="search"] {
+    padding: 8px;
+    width: 250px;
+    font-size: 16px;
+    border: 2px solid #334155;
+    border-radius: 5px;
+    background-color: #CBD5E1;
+}
+
+input[type="search"]:focus {
+    border-color: #38BDF8;
+    background-color: #F8FAFC;
+}
+
+button {
+    padding: 8px 12px;
+    font-size: 16px;
+    background-color: #38BDF8;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #0284C7;
+}
+
+/* Link Boxes Section */
+.link-boxes {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 120px;
+}
+
+.box {
+    width: 220px;
+    height: 100px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.box a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: #1E293B;
+}
+
+.box:hover {
+    background-color: #38BDF8;
+    transform: translateY(-5px);
+}
+
+.box:hover a {
+    color: white;
+}
+
+/* Footer */
+footer {
+    background-color: #1E293B;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+footer h2 {
+    margin-bottom: 10px;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    margin: 5px 0;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: #F8FAFC;
+    transition: 0.3s;
+}
+
+footer ul li a:hover {
+    color: #38BDF8;
+}
